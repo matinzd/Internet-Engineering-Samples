@@ -10,7 +10,7 @@ If you have any questions you can issue your problem [here](https://github.com/m
 2. Download and extract repo or clone it:   
 https://github.com/matinzd/Internet-Engineering-Samples/archive/master.zip   
 OR   
-git clone https://github.com/matinzd/Internet-Engineering-Samples.git   
+```git clone https://github.com/matinzd/Internet-Engineering-Samples.git```
 
 4. Run command below for your desired file:   
     ```node <filename>.js```
