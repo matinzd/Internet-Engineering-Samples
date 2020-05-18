@@ -73,11 +73,71 @@ let concatFruits = fruits2.concat('hi', 'bye')
 
 
 // Spread
-let numbers = [5, 6, 7, 8]
+// let numbers = [5, 6, 7, 8]
 
-let new_number = [1, 2, 3, 4, numbers, 9, 10]
+// let new_number = [1, 2, 3, 4, numbers, 9, 10]
 
-let spread_number = [1, 2, 3, 4, ...numbers, 9, 10]
+// let spread_number = [1, 2, 3, 4, ...numbers, 9, 10]
 
-console.log(new_number)
-console.log(spread_number)
+// console.log(new_number)
+// console.log(spread_number)
+
+var numbers = [1, 2, 3, 4, 5, 6];
+
+// var odd_numbers = numbers.filter((value, index) => value % 2 == 1)
+
+var odd_numbers = numbers.filter((value, index) => {
+    if (value % 2 == 1) return value
+})
+
+// var even_numbers = numbers.filter((value) => value % 2 == 0)
+
+var even_numbers = numbers.filter((value) => {
+    if (value % 2 == 0) return value
+})
+
+
+// console.log(odd_numbers)
+// console.log(even_numbers)
+
+
+// let multiplied_values = numbers.map((value, index) => value * 4)
+
+
+let multiplied_values = numbers.map((value, index) => {
+    // value = 
+    return value * 4
+})
+
+// console.log(multiplied_values)
+
+let arrayObjects = [
+    {
+        name: 'Al'
+    },
+    {
+        name: 'Rez'
+    }
+]
+
+let arrayObjectsFixed = arrayObjects.map((value, index) => {
+    if(index == 0) {
+        value.name = value.name + 'i'
+    }
+
+    if(index == 1) {
+        value.name = value.name + 'a'
+    }
+    return value
+})
+
+// console.log(arrayObjectsFixed)
+
+// console.log(numbers.reduce((a, b) => a + b))
+
+numbers.reduce((previousValue, currentValue) => {
+    console.log(previousValue, currentValue)
+    return currentValue
+}, 0)
+
+// console.log([1, 2, 3, 4].reduce((a, b) => a + b, 0));
